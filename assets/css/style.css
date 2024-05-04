@@ -1,3 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/*  font-family: "Young Serif", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+ /*  font-family: "Outfit", sans-serif;  */
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root{
+     --White: #ffffff;
+     --Rose-White: #fff5fa;
+     --Eggshell: #f3e6d8;
+     --Light-Grey: #e4ded8;
+     --Wenge-Brown: #5f574e;
+     --Dark-Charcoal: #302d2c;
+     --Nutmeg: #854632;
+     --Dark-Raspberry: #7b284f;
+}
+
+body{
+     background-color: var(--Eggshell);
+     font-family: "Outfit", sans-serif;
+     min-height: 100vh;
+     max-width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+main{
+     margin: 20px 0px;
+     background-color: var(--White);
+     width: 70vw;
+     max-width: 950px;
+     border-radius: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+     gap: 40px;
+}
+
+.card-img{
+     width: 90%;
+     margin: 25px auto;
+}
+
+.img{
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+}
+
+.preparation h1{
+     font-family: "Young Serif", serif;
+     font-weight: 400;
+     font-size: 30px;
+     margin-bottom: 10px;
+     margin-top: -40px;
+}
+
+.preparation,.nutricion,.instructions{
+     width: 90%;
+     padding: 0px 30px;
+}
+
+.container{
+     background-color: var(--Rose-White);
+     border-radius: 10px;
+     padding: 5px 10px;
+}
+
+.tip{
+     font-size: 15px;
+     font-weight: 400;
+     color: var(--Wenge-Brown);
+     margin-bottom: 25px;
+
+}
+
+h3{
+     margin-left: 20px;
+     margin-bottom: 10px;
+     color: var(--Dark-Raspberry);
+}
+
+.list-preparation{
+     font-size: 14px;
+     margin-bottom: 10px;
+     color: var(--Wenge-Brown);
+     padding-left: 20px;
+}
+
+.list{
+     margin-left: 40px;
+}
+
+.ingredients, .instructions{
+     width: 90%;
+     border-bottom: 1px solid var(--Light-Grey);
+}
+
+h2{
+     color: var(--Nutmeg);
+     font-family: "Young Serif", serif;
+     font-weight: 500;
+     margin-bottom: 15px;
+}
+
+.instructions ol{
+     color: var(--Wenge-Brown);
+     margin-left: 25px;
+}
+
+.instructions li::marker{
+     color: var(--Nutmeg);
+     font-weight: bold;
+}
+
+.list-instructions{
+     font-size: 14px;
+     padding-left: 20px;
+     margin-bottom: 10px;
+}
+
+.tip-nutricion{
+     font-size: 13px;
+     margin-bottom: 15px;
+     color: var(--Wenge-Brown);
+}
+
+.nutricion{
+     margin-bottom: 20px;
+}
+
+.card-container{
+     width: 100%;
+}
+
+.card-container:not(:last-child){
+     border-bottom: 1px solid var(--Light-Grey);
+}
+
+.card-nutricion{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 40px;
+     width: 60%;
+     padding-left: 25px;
+}
+
+.type-nutrition{
+     color: var(--Wenge-Brown);
+}
+
+.ammount{
+     width:10%;
+     text-align: start;
+     color: var(--Nutmeg);
+     font-weight: bold;
+}
+
 .attribution {
      font-size: 11px;
     text-align: center;
@@ -5,4 +172,21 @@
 
 .attribution a {
      color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 600px){
+     main{
+          width: 100vw;
+          margin: 0 0 20px 0;
+          border-radius: 0;
+     }
+
+     .list{
+          width: 70%;
+     }
+
+     .instructions{
+          width: 91%;
+     }
 }
