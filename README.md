@@ -17,15 +17,16 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
--Desktop
+<h2>-Desktop</h2>
 <br>
 
 
 ![Preview Desktop](./assets/images/preview-desktop.png)
 
--Mobile
-
+<h2>-Mobile</h2>
 <br>
+
+
 ![Preview Desktop](./assets/images/preview-mob.png)
 
 
